@@ -1,0 +1,1 @@
+export const addressesListElement = () => element(by.css('.addresses-lists')); 

@@ -1,0 +1,21 @@
+{
+  "name": "aura-challenge-selenium_account",
+  "version": "1.0.0",
+  "description": "code test",
+  "main": "index.js",
+  "scripts": {
+    "clean-results": "rimraf results",
+    "test": "npm run clean-results && protractor protractor-conf.js"
+  },
+  "dependencies": {
+    "jasmine-reporters": "2.4.0",
+    "protractor-html-reporter-2": "1.0.4",
+    "chance": "1.1.7"
+  },
+  "devDependencies": {
+    "babel-register": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "fs-extra": "9.1.0",
+    "rimraf": "3.0.2"
+  }
+}
