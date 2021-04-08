@@ -15,7 +15,9 @@ exports.config = {
         shardTestFiles: false,
         maxInstances: 1,
         specs: ['src/specs/*.spec.js'],
-
+        chromeOptions: {
+            args: ["--headless", "--disable-gpu"]
+        }
     },
     framework: 'jasmine2',
 

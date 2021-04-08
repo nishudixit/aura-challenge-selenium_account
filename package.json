@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "clean-results": "rimraf results",
-    "test": "npm run clean-results && protractor protractor-conf.js"
+    "webdriver-update": "webdriver-manager update",
+    "test": "npm run clean-results && npm run webdriver-update && protractor protractor-conf.js"
   },
   "dependencies": {
     "jasmine-reporters": "2.4.0",
     "protractor-html-reporter-2": "1.0.4",
-    "chance": "1.1.7"
+    "chance": "1.1.7",
+    "protractor": "7.0.0"
   },
   "devDependencies": {
     "babel-register": "6.26.0",
